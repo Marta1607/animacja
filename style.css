@@ -8,9 +8,23 @@ animation-name: example;
 animation-duration: 4s;
 }
 @keyframes example {
-    0%   {left:0px; top:0px;}
-    25%  { left:200px; top:0px;}
-    50%  { left:200px; top:200px;}
-    75%  { left:0px; top:200px;}
-    100% { left:0px; top:0px;}
+    from{
+        width: 1280px;
+        height: 794,5px;
+        border: 2px solid black;
+        margin-top: 50px;
+        padding: 10px;
+    }
+    to{
+        width:75px;
+        height: 50px;
+    }
+}
+.box{
+    width: 1280px;
+    height: 794,5px;
+    box-sizing: border-box;
+}
+img:hover{
+    transform: scale(1,5);
 }
